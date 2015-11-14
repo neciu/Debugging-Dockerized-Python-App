@@ -1,0 +1,11 @@
+django:
+  build: .
+  ports:
+    - "8080:8080"
+  volumes:
+    - .:/app
+  links:
+    - postgres
+
+postgres:
+  image: postgres:9.5

@@ -1,0 +1,14 @@
+django:
+  build: .
+  dockerfile: Dockerfile-development
+  ports:
+    - "8080:8080"
+    - "2000:22"
+  volumes:
+    - .:/app
+    - .pycharm_helpers/:/root/.pycharm_helpers
+  links:
+    - postgres
+
+postgres:
+  image: postgres:9.5
