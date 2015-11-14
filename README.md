@@ -9,6 +9,7 @@
 - Username: `root`
 - Password: `password`
 - Interpreter path: `/usr/local/bin/python`
+
 5. For the first time it may complain about new host and so on. So don't worry.
 6. Add new run configuration with settings:
 
@@ -17,6 +18,7 @@
 - Environment variables: `DJANGO_SETTINGS_MODULE=myapp.settings`
 - Working directory: `/app`
 - Path mappings: `your absolute path to project direcory=/app`
+
 7. Hit run button! You should get fresh running Django app.
 8. Now set breakpoint in setting file and start debug.
 9. Voilà!
