@@ -1,3 +1,7 @@
+# What?
+
+This is example project for my blog entry: [Debugging Dockerized Python (Django) App With PyCharm](http://blog.netczuk.pl/debugging-dockerized-python-django-app-with-pycharm/)
+
 # Usage
 1. Run helper script `./build-core-django.sh`. It will build core image.
 2. Run docker compose command: `docker-compose -f docker-compose-development.yml up`. It will build development image, and then run it with Postgres container.
